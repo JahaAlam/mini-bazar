@@ -38,8 +38,8 @@
                     <div class="">
                         <h1 class="text-4xl font-bold py-4">Kitchenware</h1>
                         <div class=" grid grid-cols-3 gap-5 pl-20">
-                             <!----------------------------item-1----------------->
-                            <div onclick="itemsNameAndPrice()" class="card w-72 bg-base-100 shadow-xl" id="prod1" >
+                            <!----------------------------item-1----------------->
+                            <div onclick="itemsNameAndPrice()" class="card w-72 bg-base-100 shadow-xl" id="prod1">
                                 <figure class="px-10 pt-10">
                                     <img src="images/prod1.png" alt="Shoes" class="rounded-xl" />
                                 </figure>
@@ -56,7 +56,7 @@
                                     <p id=""><span id="item-price">39.00</span>TK</p>
                                 </div>
                             </div>
-                             <!----------------------------item-2----------------->
+                            <!----------------------------item-2----------------->
                             <div onclick="itemsNameAndPrice2()" class="card w-72 bg-base-100 shadow-xl">
                                 <figure class="px-10 pt-10">
                                     <img src="images/prod2.png" alt="Shoes" class="rounded-xl" />
@@ -74,7 +74,7 @@
                                     <p id="item2-price">40.00 TK</p>
                                 </div>
                             </div>
-                             <!----------------------------item-3----------------->
+                            <!----------------------------item-3----------------->
                             <div onclick="itemsNameAndPrice3()" class="card w-72 bg-base-100 shadow-xl">
                                 <figure class="px-10 pt-10">
                                     <img src="images/prod3.png" alt="Shoes" class="rounded-xl" />
@@ -98,7 +98,7 @@
                     <div>
                         <h1 class="text-4xl font-bold py-4 ">Sportswear</h1>
                         <div class=" grid grid-cols-3 pl-20">
-                             <!----------------------------item-4----------------->
+                            <!----------------------------item-4----------------->
                             <div onclick="itemsNameAndPrice4()" class="card w-72 bg-base-100 shadow-xl">
                                 <figure class="px-10 pt-10">
                                     <img src="images/prod4.png" alt="Shoes" class="rounded-xl" />
@@ -116,7 +116,7 @@
                                     <p id="item4-price">49.00 TK</p>
                                 </div>
                             </div>
-                             <!----------------------------item-5----------------->
+                            <!----------------------------item-5----------------->
                             <div onclick="itemsNameAndPrice5()" class="card w-72 bg-base-100 shadow-xl">
                                 <figure class="px-10 pt-10">
                                     <img src="images/prod5.png" alt="Shoes" class="rounded-xl" />
@@ -131,10 +131,10 @@
                                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                     </div>
                                     <h1 id="item5-name" class="text-5 font-semibold">Full Jersey Set</h1>
-                                    <p id="item5-price" >69.00 TK</p>
+                                    <p id="item5-price">69.00 TK</p>
                                 </div>
                             </div>
-                             <!----------------------------item-6----------------->
+                            <!----------------------------item-6----------------->
                             <div onclick="itemsNameAndPrice6()" class="card w-72 bg-base-100 shadow-xl">
                                 <figure class="px-10 pt-10">
                                     <img src="images/prod6.png" alt="Shoes" class="rounded-xl" />
@@ -218,30 +218,36 @@
                         <h1 class="text-2xl font-medium text-black px-5 py-6">Have coupon?</h1>
                         <p class="p-8">
                             <input type="text" class="pl-7 py-4  text-2xl font-normal" placeholder="Copon Code">
-                            <button class="btn-secondary py-5 px-8 rounded-lg text-2xl text-white font-bold">Apply</button>
+                            <button
+                                class="btn-secondary py-5 px-8 rounded-lg text-2xl text-white font-bold">Apply</button>
                         </p>
                     </div>
                     <div>
                         <div class="bg-white text-3xl font-medium pl-6">
                             <div id="show-items">
-                                <ol class="py-10">
-                                    <li id="show-item" class=""> home cooker</li>
-                                    <li class="py-4">Sport cates</li>
-                                    <li>Home Cooker</li>
-                                </ol>
+
+                                <div id="item-list"></div>
                             </div>
-                            <hr>
-                           <div>
-                            <ul>
-                                <li>Total Price:  <span>2754.25 <span>TK</span></span></li>
-                                <li class="py-5">Discount: <span>51.42</span> <span>TK</span>/li>
-                                <li> Total: <span>205.60 <span>Tk</span></span></li>
-                            </ul>
-                           </div>
-    
-                            <button class="btn-secondary px-20 py-5 rounded-lg text-5 text-white font-semibold mt-10">Make Purchase</button>
+                            <div class="py-20">
+                                <hr>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>Total Price: <span id="total-price" class="text-gray-400 font-normal">2754.25
+                                        </span><span>TK</span></li>
+                                    <li class="py-5">Discount: <span id="discount-price"
+                                            class="text-gray-400 font-normal">51.42</span> <span>TK</span>
+                                    </li>
+                                    <li> Total: <span id="total" class="text-gray-400 font-normal">205.60
+                                        </span><span>Tk</span></li>
+                                </ul>
+                            </div>
+
+                            <button
+                                class="btn-secondary px-20 py-5 rounded-lg text-5 text-white font-semibold mt-10">Make
+                                Purchase</button>
                         </div>
-    
+
                     </div>
                 </div>
             </div>
