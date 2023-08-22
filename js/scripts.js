@@ -1,16 +1,4 @@
 
-
-/* document.getElementById('prod1').addEventListener('click', function(){
-    console.log('clicked')
-    const itemPrice = document.getElementById('item-price');
-    const itemPriceValueString = itemPrice.innerText;
-    const price = parseFloat(itemPriceValueString).toFixed(2);
-    console.log(price);
-
-    const showItems = document.getElementById('show-item');
-     const showItemsElement = showItems.innerText; 
-   /* // const showItemList = document.createElement('li');
-    showItemList.innerText = price; */
 let total = 0;
 let discountPrice = 0;
 let totalPrice = 0;
@@ -26,7 +14,7 @@ function itemsNameAndPrice() {
     setItemPrice('total-price', totalPrice);
 
     //set total
-    total = totalPrice;  
+    total = totalPrice;
     setTotal('total', total);
     //calculate discount
     if (totalPrice >= 200) {
@@ -34,11 +22,8 @@ function itemsNameAndPrice() {
         //set dsicount price
         setDiscountPrice('discount-price', (discountPrice).toFixed(2));
         total = totalPrice - discountPrice;
-        setTotal('total', total);  
+        setTotal('total', total);
     }
-
-
-
 }
 
 //--------------item 2--------------------------------
@@ -52,18 +37,18 @@ function itemsNameAndPrice2() {
     //set the price
     setItemPrice('total-price', totalPrice);
 
-     //set total
-     total = totalPrice;  
-     setTotal('total', total);
-     //calculate discount
-     if (totalPrice >= 200) {
-         const discountPrice = totalPrice * 20 / 100;
-         //set dsicount price
-         setDiscountPrice('discount-price', (discountPrice).toFixed(2));
-         total = totalPrice - discountPrice;
-         setTotal('total', total);  
-     }
- 
+    //set total
+    total = totalPrice;
+    setTotal('total', total);
+    //calculate discount
+    if (totalPrice >= 200) {
+        const discountPrice = totalPrice * 20 / 100;
+        //set dsicount price
+        setDiscountPrice('discount-price', (discountPrice).toFixed(2));
+        total = totalPrice - discountPrice;
+        setTotal('total', total);
+    }
+
 
 }
 
@@ -76,18 +61,18 @@ function itemsNameAndPrice3() {
     //set the price
     setItemPrice('total-price', totalPrice);
 
-     //set total
-     total = totalPrice;  
-     setTotal('total', total);
-     //calculate discount
-     if (totalPrice >= 200) {
-         const discountPrice = totalPrice * 20 / 100;
-         //set dsicount price
-         setDiscountPrice('discount-price', (discountPrice).toFixed(2));
-         total = totalPrice - discountPrice;
-         setTotal('total', total);  
-     }
- 
+    //set total
+    total = totalPrice;
+    setTotal('total', total);
+    //calculate discount
+    if (totalPrice >= 200) {
+        const discountPrice = totalPrice * 20 / 100;
+        //set dsicount price
+        setDiscountPrice('discount-price', (discountPrice).toFixed(2));
+        total = totalPrice - discountPrice;
+        setTotal('total', total);
+    }
+
 }
 function itemsNameAndPrice4() {
     const price = getElementPrice('item4-price');
@@ -98,18 +83,18 @@ function itemsNameAndPrice4() {
     //set the price
     setItemPrice('total-price', totalPrice);
 
-     //set total
-     total = totalPrice;  
-     setTotal('total', total);
-     //calculate discount
-     if (totalPrice >= 200) {
-         const discountPrice = totalPrice * 20 / 100;
-         //set dsicount price
-         setDiscountPrice('discount-price', (discountPrice).toFixed(2));
-         total = totalPrice - discountPrice;
-         setTotal('total', total);  
-     }
- 
+    //set total
+    total = totalPrice;
+    setTotal('total', total);
+    //calculate discount
+    if (totalPrice >= 200) {
+        const discountPrice = totalPrice * 20 / 100;
+        //set dsicount price
+        setDiscountPrice('discount-price', (discountPrice).toFixed(2));
+        total = totalPrice - discountPrice;
+        setTotal('total', total);
+    }
+
 }
 function itemsNameAndPrice5() {
     const price = getElementPrice('item5-price');
@@ -117,22 +102,21 @@ function itemsNameAndPrice5() {
     itemNameList(itemName);
     //calculate total
     totalPrice = parseFloat(totalPrice) + parseFloat(price);
-    console.log((totalPrice).toFixed(2));
     //set the price
     setItemPrice('total-price', totalPrice);
 
-     //set total
-     total = totalPrice;  
-     setTotal('total', total);
-     //calculate discount
-     if (totalPrice >= 200) {
-         const discountPrice = totalPrice * 20 / 100;
-         //set dsicount price
-         setDiscountPrice('discount-price', (discountPrice).toFixed(2));
-         total = totalPrice - discountPrice;
-         setTotal('total', total);  
-     }
- 
+    //set total
+    total = totalPrice;
+    setTotal('total', total);
+    //calculate discount
+    if (totalPrice >= 200) {
+        const discountPrice = totalPrice * 20 / 100;
+        //set dsicount price
+        setDiscountPrice('discount-price', (discountPrice).toFixed(2));
+        total = totalPrice - discountPrice;
+        setTotal('total', total);
+    }
+
 }
 function itemsNameAndPrice6() {
     const price = getElementPrice('item6-price');
@@ -143,28 +127,36 @@ function itemsNameAndPrice6() {
     //set the price
     setItemPrice('total-price', totalPrice);
 
-     //set total
-     total = totalPrice;  
-     setTotal('total', total);
-     //calculate discount
-     if (totalPrice >= 200) {
-         const discountPrice = totalPrice * 20 / 100;
-         //set dsicount price
-         setDiscountPrice('discount-price', (discountPrice).toFixed(2));
-         total = totalPrice - discountPrice;
-         setTotal('total', total);  
-     }
- 
+    //set total
+    total = totalPrice;
+    setTotal('total', total);
+    //calculate discount
+    if (totalPrice >= 200) {
+        const discountPrice = totalPrice * 20 / 100;
+        //set dsicount price
+        setDiscountPrice('discount-price', (discountPrice).toFixed(2));
+        total = totalPrice - discountPrice;
+        setTotal('total', total);
+    }
+
+}
+function applyCoupon(){
+    const coupon = getInputValue('coupon');
+    if(coupon === 'SELL200'){
+    
+        console.log('code is in if');
+    }else{
+        console.log(' ar Partesina')
+    }
 }
 
 
+function getInputValue(inputValue) {
+    const couponValue = document.getElementById(inputValue);
+    const couponValueString = couponValue.value;
+    return couponValueString;
 
-
-/* function ItemName(){
-    const name = getItemName('item-name');
-    console.log(name);
-    
-} */
+}
 
 function getItemName(elmentNameId) {
     const itemName = document.getElementById(elmentNameId);
@@ -180,6 +172,7 @@ function getElementPrice(elementId) {
     /*  console.log(price); */
 }
 
+
 //set item price
 function setItemPrice(itemPriceId, totalPrice) {
     //console.log('working');
@@ -194,7 +187,7 @@ function setDiscountPrice(discountPriceId, discountPrice) {
 }
 
 //set total price function
-function setTotal(totalPriceId, total){
+function setTotal(totalPriceId, total) {
     const totalPayAble = document.getElementById(totalPriceId);
     totalPayAble.innerText = total;
 }

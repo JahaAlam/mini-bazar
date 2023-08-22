@@ -217,9 +217,9 @@
                     <div class="bg-white">
                         <h1 class="text-2xl font-medium text-black px-5 py-6">Have coupon?</h1>
                         <p class="p-8">
-                            <input type="text" class="pl-7 py-4  text-2xl font-normal border" placeholder="Copon Code">
+                            <input id="coupon" type="text" class="pl-7 py-4  text-2xl font-normal border" placeholder="Coupon Code">
                             <button
-                                class="btn-secondary py-5 px-8 rounded-lg text-2xl text-white font-bold">Apply</button>
+                               onclick="applyCoupon()" class="btn-secondary py-5 px-8 rounded-lg text-2xl text-white font-bold">Apply</button>
                         </p>
                     </div>
                     <div>
@@ -244,7 +244,7 @@
                             </div>
 
                             <button
-                                class="btn-secondary px-20 py-5 rounded-lg text-5 text-white font-semibold mt-10">Make
+                                class="btn-secondary px-20 py-5 rounded-lg text-5 text-white font-semibold mt-10 disabled ">Make
                                 Purchase</button>
                         </div>
 
