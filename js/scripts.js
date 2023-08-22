@@ -12,87 +12,151 @@
    /* // const showItemList = document.createElement('li');
     showItemList.innerText = price; */
 let total = 0;
+let discountPrice = 0;
+let totalPrice = 0;
 
 //----------------------item-1
 function itemsNameAndPrice() {
     const price = getElementPrice('item-price');
-    //console.log(typeof (price));
     const itemName = getItemName('item-name');
-    // console.log(itemName);
     itemNameList(itemName);
-//calculate total
-    total = parseFloat(total) + parseFloat(price);
-    console.log((total).toFixed(2));
+    //calculate totalPrice
+    totalPrice = parseFloat(totalPrice) + parseFloat(price);
+    //set the item price
+    setItemPrice('total-price', totalPrice);
 
-    //set the price
-    setItemPrice('total-price', total);
+    //set total
+    total = totalPrice;  
+    setTotal('total', total);
+    //calculate discount
+    if (totalPrice >= 200) {
+        const discountPrice = totalPrice * 20 / 100;
+        //set dsicount price
+        setDiscountPrice('discount-price', (discountPrice).toFixed(2));
+        total = totalPrice - discountPrice;
+        setTotal('total', total);  
+    }
+
+
 
 }
 
 //--------------item 2--------------------------------
 function itemsNameAndPrice2() {
     const price = getElementPrice('item2-price');
-    //console.log(price);
     const itemName = getItemName('item2-name');
-    //console.log(itemName);
-    //setItemName('show-item2', itemName);
     itemNameList(itemName);
-//calculate total
-    total = parseFloat(total) + parseFloat(price);
-    console.log((total).toFixed(2));
-     //set the price
-     setItemPrice('total-price', total);
+    //calculate total
+    totalPrice = parseFloat(totalPrice) + parseFloat(price);
+    //console.log((totalPrice).toFixed(2));
+    //set the price
+    setItemPrice('total-price', totalPrice);
+
+     //set total
+     total = totalPrice;  
+     setTotal('total', total);
+     //calculate discount
+     if (totalPrice >= 200) {
+         const discountPrice = totalPrice * 20 / 100;
+         //set dsicount price
+         setDiscountPrice('discount-price', (discountPrice).toFixed(2));
+         total = totalPrice - discountPrice;
+         setTotal('total', total);  
+     }
+ 
 
 }
 
 function itemsNameAndPrice3() {
     const price = getElementPrice('item3-price');
-    //console.log(price);
     const itemName = getItemName('item3-name');
-   // console.log(itemName);
     itemNameList(itemName);
-//calculate total
-    total = parseFloat(total) + parseFloat(price);
-    console.log((total).toFixed(2));
-     //set the price
-     setItemPrice('total-price', total);
+    //calculate total
+    totalPrice = parseFloat(totalPrice) + parseFloat(price);
+    //set the price
+    setItemPrice('total-price', totalPrice);
+
+     //set total
+     total = totalPrice;  
+     setTotal('total', total);
+     //calculate discount
+     if (totalPrice >= 200) {
+         const discountPrice = totalPrice * 20 / 100;
+         //set dsicount price
+         setDiscountPrice('discount-price', (discountPrice).toFixed(2));
+         total = totalPrice - discountPrice;
+         setTotal('total', total);  
+     }
+ 
 }
 function itemsNameAndPrice4() {
     const price = getElementPrice('item4-price');
-    //console.log(price);
     const itemName = getItemName('item4-name');
-    //console.log(itemName);
     itemNameList(itemName);
     //calculate total
-    total = parseFloat(total) + parseFloat(price);
-    console.log((total).toFixed(2));
-     //set the price
-     setItemPrice('total-price', total);
+    totalPrice = parseFloat(totalPrice) + parseFloat(price);
+    //set the price
+    setItemPrice('total-price', totalPrice);
+
+     //set total
+     total = totalPrice;  
+     setTotal('total', total);
+     //calculate discount
+     if (totalPrice >= 200) {
+         const discountPrice = totalPrice * 20 / 100;
+         //set dsicount price
+         setDiscountPrice('discount-price', (discountPrice).toFixed(2));
+         total = totalPrice - discountPrice;
+         setTotal('total', total);  
+     }
+ 
 }
 function itemsNameAndPrice5() {
     const price = getElementPrice('item5-price');
-   // console.log(price);
     const itemName = getItemName('item5-name');
-    //console.log(itemName);
     itemNameList(itemName);
     //calculate total
-    total = parseFloat(total) + parseFloat(price);
-    console.log((total).toFixed(2));
-     //set the price
-     setItemPrice('total-price', total);
+    totalPrice = parseFloat(totalPrice) + parseFloat(price);
+    console.log((totalPrice).toFixed(2));
+    //set the price
+    setItemPrice('total-price', totalPrice);
+
+     //set total
+     total = totalPrice;  
+     setTotal('total', total);
+     //calculate discount
+     if (totalPrice >= 200) {
+         const discountPrice = totalPrice * 20 / 100;
+         //set dsicount price
+         setDiscountPrice('discount-price', (discountPrice).toFixed(2));
+         total = totalPrice - discountPrice;
+         setTotal('total', total);  
+     }
+ 
 }
 function itemsNameAndPrice6() {
     const price = getElementPrice('item6-price');
-    //console.log(price);
     const itemName = getItemName('item6-name');
-    //console.log(itemName);
     itemNameList(itemName);
     //calculate total
-    total = parseFloat(total) + parseFloat(price);
-    console.log((total).toFixed(2));
-     //set the price
-     setItemPrice('total-price', total);
+    totalPrice = parseFloat(totalPrice) + parseFloat(price);
+    //set the price
+    setItemPrice('total-price', totalPrice);
+
+     //set total
+     total = totalPrice;  
+     setTotal('total', total);
+     //calculate discount
+     if (totalPrice >= 200) {
+         const discountPrice = totalPrice * 20 / 100;
+         //set dsicount price
+         setDiscountPrice('discount-price', (discountPrice).toFixed(2));
+         total = totalPrice - discountPrice;
+         setTotal('total', total);  
+     }
+ 
 }
+
 
 
 
@@ -117,12 +181,24 @@ function getElementPrice(elementId) {
 }
 
 //set item price
-function setItemPrice(itemPriceId, total) {
+function setItemPrice(itemPriceId, totalPrice) {
     //console.log('working');
     const itemPrice = document.getElementById(itemPriceId);
-    itemPrice.innerText = total;
+    itemPrice.innerText = totalPrice;
 
 }
+//set discount price function
+function setDiscountPrice(discountPriceId, discountPrice) {
+    const discountItemPrice = document.getElementById(discountPriceId);
+    discountItemPrice.innerText = discountPrice;
+}
+
+//set total price function
+function setTotal(totalPriceId, total){
+    const totalPayAble = document.getElementById(totalPriceId);
+    totalPayAble.innerText = total;
+}
+
 
 function itemNameList(itemName) {
     //console.log('testing count')
