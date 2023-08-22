@@ -38,7 +38,8 @@
                     <div class="">
                         <h1 class="text-4xl font-bold py-4">Kitchenware</h1>
                         <div class=" grid grid-cols-3 gap-5 pl-20">
-                            <div class="card w-72 bg-base-100 shadow-xl">
+                             <!----------------------------item-1----------------->
+                            <div onclick="itemsNameAndPrice()" class="card w-72 bg-base-100 shadow-xl" id="prod1" >
                                 <figure class="px-10 pt-10">
                                     <img src="images/prod1.png" alt="Shoes" class="rounded-xl" />
                                 </figure>
@@ -51,11 +52,12 @@
                                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                     </div>
-                                    <h1 class="text-5 font-semibold">K. Accessories</h1>
-                                    <p>39.00 TK</p>
+                                    <h1 id="item-name" class="text-5 font-semibold">K. Accessories</h1>
+                                    <p id=""><span id="item-price">39.00</span>TK</p>
                                 </div>
                             </div>
-                            <div class="card w-72 bg-base-100 shadow-xl">
+                             <!----------------------------item-2----------------->
+                            <div onclick="itemsNameAndPrice2()" class="card w-72 bg-base-100 shadow-xl">
                                 <figure class="px-10 pt-10">
                                     <img src="images/prod2.png" alt="Shoes" class="rounded-xl" />
                                 </figure>
@@ -68,11 +70,12 @@
                                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                     </div>
-                                    <h1 class="text-5 font-semibold">K. Accessories</h1>
-                                    <p>39.00 TK</p>
+                                    <h1 id="item2-name" class="text-5 font-semibold">K. Accessories</h1>
+                                    <p id="item2-price">40.00 TK</p>
                                 </div>
                             </div>
-                            <div class="card w-72 bg-base-100 shadow-xl">
+                             <!----------------------------item-3----------------->
+                            <div onclick="itemsNameAndPrice3()" class="card w-72 bg-base-100 shadow-xl">
                                 <figure class="px-10 pt-10">
                                     <img src="images/prod3.png" alt="Shoes" class="rounded-xl" />
                                 </figure>
@@ -85,18 +88,18 @@
                                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                     </div>
-                                    <h1 class="text-5 font-semibold">K. Accessories</h1>
-                                    <p>39.00 TK</p>
+                                    <h1 id="item3-name" class="text-5 font-semibold">K. Accessories</h1>
+                                    <p id="item3-price">39.00 TK</p>
                                 </div>
                             </div>
-
                         </div>
 
                     </div>
                     <div>
                         <h1 class="text-4xl font-bold py-4 ">Sportswear</h1>
                         <div class=" grid grid-cols-3 pl-20">
-                            <div class="card w-72 bg-base-100 shadow-xl">
+                             <!----------------------------item-4----------------->
+                            <div onclick="itemsNameAndPrice4()" class="card w-72 bg-base-100 shadow-xl">
                                 <figure class="px-10 pt-10">
                                     <img src="images/prod4.png" alt="Shoes" class="rounded-xl" />
                                 </figure>
@@ -109,11 +112,12 @@
                                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                     </div>
-                                    <h1 class="text-5 font-semibold">K. Accessories</h1>
-                                    <p>39.00 TK</p>
+                                    <h1 id="item4-name" class="text-5 font-semibold">Sports Back Cap</h1>
+                                    <p id="item4-price">49.00 TK</p>
                                 </div>
                             </div>
-                            <div class="card w-72 bg-base-100 shadow-xl">
+                             <!----------------------------item-5----------------->
+                            <div onclick="itemsNameAndPrice5()" class="card w-72 bg-base-100 shadow-xl">
                                 <figure class="px-10 pt-10">
                                     <img src="images/prod5.png" alt="Shoes" class="rounded-xl" />
                                 </figure>
@@ -126,11 +130,12 @@
                                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                     </div>
-                                    <h1 class="text-5 font-semibold">K. Accessories</h1>
-                                    <p>39.00 TK</p>
+                                    <h1 id="item5-name" class="text-5 font-semibold">Full Jersey Set</h1>
+                                    <p id="item5-price" >69.00 TK</p>
                                 </div>
                             </div>
-                            <div class="card w-72 bg-base-100 shadow-xl">
+                             <!----------------------------item-6----------------->
+                            <div onclick="itemsNameAndPrice6()" class="card w-72 bg-base-100 shadow-xl">
                                 <figure class="px-10 pt-10">
                                     <img src="images/prod6.png" alt="Shoes" class="rounded-xl" />
                                 </figure>
@@ -143,13 +148,11 @@
                                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                     </div>
-                                    <h1 class="text-5 font-semibold">K. Accessories</h1>
-                                    <p>39.00 TK</p>
+                                    <h1 id="item6-name" class="text-5 font-semibold">Sports Cates</h1>
+                                    <p id="item6-price">159.00 TK</p>
                                 </div>
                             </div>
-
                         </div>
-
                     </div>
                     <!-- <div>
                         <h1>Furniture</h1>
@@ -218,22 +221,28 @@
                             <button class="btn-secondary py-5 px-8 rounded-lg text-2xl text-white font-bold">Apply</button>
                         </p>
                     </div>
-                    <div class="bg-white text-3xl font-medium pl-6">
-                        <ol class="py-10">
-                            <li class=""> home cooker</li>
-                            <li class="py-4">Sport cates</li>
-                            <li>Home Cooker</li>
-                        </ol>
-                        <hr>
-                        <ul>
-                            <li>Total Price:  <span>2754.25 <span>TK</span></span></li>
-                            <li class="py-5">Discount: <span>51.42</span> <span>TK</span>/li>
-                            <li> Total: <span>205.60 <span>Tk</span></span></li>
-                        </ul>
-
-                        <button class="btn-secondary px-20 py-5 rounded-lg text-5 text-white font-semibold mt-10">Make Purchase</button>
+                    <div>
+                        <div class="bg-white text-3xl font-medium pl-6">
+                            <div id="show-items">
+                                <ol class="py-10">
+                                    <li id="show-item" class=""> home cooker</li>
+                                    <li class="py-4">Sport cates</li>
+                                    <li>Home Cooker</li>
+                                </ol>
+                            </div>
+                            <hr>
+                           <div>
+                            <ul>
+                                <li>Total Price:  <span>2754.25 <span>TK</span></span></li>
+                                <li class="py-5">Discount: <span>51.42</span> <span>TK</span>/li>
+                                <li> Total: <span>205.60 <span>Tk</span></span></li>
+                            </ul>
+                           </div>
+    
+                            <button class="btn-secondary px-20 py-5 rounded-lg text-5 text-white font-semibold mt-10">Make Purchase</button>
+                        </div>
+    
                     </div>
-
                 </div>
             </div>
 
@@ -242,6 +251,8 @@
     </main>
 
 
+
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
