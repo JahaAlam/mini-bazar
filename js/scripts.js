@@ -2,6 +2,7 @@
 let total = 0;
 let discountPrice = 0;
 let totalPrice = 0;
+let discount = 0;
 
 //----------------------item-1
 function itemsNameAndPrice() {
@@ -15,16 +16,18 @@ function itemsNameAndPrice() {
 
     //set total
     total = totalPrice;
+    
     setTotal('total', total);
     //calculate discount
-    if (totalPrice >= 200) {
-        const discountPrice = totalPrice * 20 / 100;
+ 
+        const discountPrice = totalPrice * discount;
+        console.log(discount);
         //set dsicount price
         setDiscountPrice('discount-price', (discountPrice).toFixed(2));
         total = totalPrice - discountPrice;
         setTotal('total', total);
     }
-}
+
 
 //--------------item 2--------------------------------
 function itemsNameAndPrice2() {
@@ -140,12 +143,17 @@ function itemsNameAndPrice6() {
     }
 
 }
-function applyCoupon(){
+function applyCoupon() {
     const coupon = getInputValue('coupon');
-    if(coupon === 'SELL200'){
-    
+    if (coupon === 'SELL200') {
+        discount = 20 / 100;
+        const discountPrice = totalPrice * discount;
+        setDiscountPrice('discount-price', (discountPrice).toFixed(2));
+        total = totalPrice - discountPrice;
+        setTotal('total', total);
         console.log('code is in if');
-    }else{
+        console.log(total);
+    } else {
         console.log(' ar Partesina')
     }
 }
